@@ -1,0 +1,48 @@
+Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
+Detecting compiler hash for triplet x64-windows...
+A suitable version of powershell-core was not found (required v7.2.23).
+Downloading https://github.com/PowerShell/PowerShell/releases/download/v7.2.23/PowerShell-7.2.23-win-x64.zip
+Extracting powershell-core...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe
+The following packages will be built and installed:
+    glm:x64-windows@1.0.1#2 -- C:\Users\mailt\AppData\Local\vcpkg\registries\git-trees\9f323014ca30e742823ae0d6e1a47243000774c1
+  * vcpkg-cmake:x64-windows@2023-05-04 -- C:\Users\mailt\AppData\Local\vcpkg\registries\git-trees\88a7058fc7fa73a9c4c99cfcae9d79e2abf87a5a
+  * vcpkg-cmake-config:x64-windows@2022-02-06#1 -- C:\Users\mailt\AppData\Local\vcpkg\registries\git-trees\8d54cc4f487d51b655abec5f9c9c3f86ca83311f
+Additional packages (*) will be modified to complete this operation.
+A suitable version of 7zip was not found (required v24.8.0).
+Downloading https://github.com/ip7z/7zip/releases/download/24.08/7z2408-extra.7z
+Extracting 7zip...
+Restored 2 package(s) from C:\Users\mailt\AppData\Local\vcpkg\archives in 86.4 ms. Use --debug to see more details.
+Installing 1/3 vcpkg-cmake-config:x64-windows@2022-02-06#1...
+Elapsed time to handle vcpkg-cmake-config:x64-windows: 8.55 ms
+vcpkg-cmake-config:x64-windows package ABI: 0bb3808c78f1862ab8de2af97196dd112db612b8dd2a5f1c9b35e29013460879
+Installing 2/3 vcpkg-cmake:x64-windows@2023-05-04...
+Elapsed time to handle vcpkg-cmake:x64-windows: 12 ms
+vcpkg-cmake:x64-windows package ABI: b826bd207ad75dc71abf95d059e4baf383363309ed8c46224046530d53f16adc
+Installing 3/3 glm:x64-windows@1.0.1#2...
+Building glm:x64-windows@1.0.1#2...
+C:\Users\mailt\AppData\Local\vcpkg\registries\git-trees\9f323014ca30e742823ae0d6e1a47243000774c1: info: installing overlay port from here
+-- Note: glm only supports static library linkage. Building static library.
+-- Downloading https://github.com/g-truc/glm/archive/1.0.1.tar.gz -> g-truc-glm-1.0.1.tar.gz...
+-- Extracting source C:/Users/mailt/Documents/Skola/TNCG15/Renderer/vcpkg/downloads/g-truc-glm-1.0.1.tar.gz
+-- Using source at C:/Users/mailt/Documents/Skola/TNCG15/Renderer/vcpkg/buildtrees/glm/src/1.0.1-4ce719d489.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/mailt/Documents/Skola/TNCG15/Renderer/vcpkg/packages/glm_x64-windows/share/glm/copyright
+-- Installing: C:/Users/mailt/Documents/Skola/TNCG15/Renderer/vcpkg/packages/glm_x64-windows/share/glm/usage
+-- Performing post-build validation
+Stored binaries in 1 destinations in 772 ms.
+Elapsed time to handle glm:x64-windows: 12 s
+glm:x64-windows package ABI: ecbc9a059983995a7bc2e43ffef659fa606ebaffc944411ac58df2bba9e5c2ee
+Total install time: 12 s
+The package glm provides CMake targets:
+
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm)
+
+    # Or use the header-only version
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm-header-only)
+

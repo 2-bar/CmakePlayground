@@ -1,0 +1,10 @@
+^C:\USERS\MAILT\DOCUMENTS\SKOLA\TNCG15\RENDERER\CMAKEPLAYGROUND\CMAKEPROJECT1\OUT\BUILD\CMAKEFILES\4A7B445B2C955671F07C671C02A69A9E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mailt/Documents/Skola/TNCG15/Renderer/CmakePlayground/CMakeProject1 -BC:/Users/mailt/Documents/Skola/TNCG15/Renderer/CmakePlayground/CMakeProject1/out/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/mailt/Documents/Skola/TNCG15/Renderer/CmakePlayground/CMakeProject1/out/build/CMakeProject1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
